@@ -25,11 +25,12 @@ header {
 a {
 	cursor: pointer;
 	margin-left: 30px;
-	font-size: 20px;
-	transition: 0.8s;
+	font-size: 24px;
 
 	&:hover {
 		color: #c51111;
+		font-size: 26px;
+		transition: 0.8s ease-in-out;
 	}
 }
 
@@ -141,12 +142,14 @@ video {
 }
 
 .mascara-form {
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 1;
+	transition: visibility 1s ease-in-out;
 	background: linear-gradient(
 		109deg,
 		rgba(10, 12, 16, 0.99) 15%,
@@ -166,6 +169,7 @@ form {
 	border-radius: 5px;
 	gap: 20px;
 	z-index: 2;
+	transition: left 1s ease-in-out;
 }
 
 input {
@@ -213,5 +217,4 @@ Final
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-z-index: 2;
 */

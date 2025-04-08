@@ -32,7 +32,7 @@
                 entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
-            <button>Entre em contato</button>
+            <button onclick="clickButton()">Entre em contato</button>
         </section>
 
         <section class="container-image">
@@ -51,14 +51,17 @@
     </div>
     <div class="mascara"></div>
 
-    <div class="mascara-form"></div>
-    <form>
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="E-mail">
-        <input type="number" placeholder="Telefone">
-        <textarea placeholder="Nos conte um pouco mais sobre seu problema"></textarea>
-        <button class="form-button">Pedir orçamento</button>
+    <div class="mascara-form" onclick="clickInMask()">
+    </div>
+    <form action="https://formcarry.com/s/UtwfQK2pApW" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="Nome" name="nome" required>
+        <input type="email" placeholder="E-mail" name="email" required>
+        <input type="tel" placeholder="Telefone" name="telefone" required>
+        <textarea placeholder="Nos conte um pouco mais sobre seu problema" name="duvida"></textarea>
+        <button class="form-button" type="submit">Pedir orçamento</button>
     </form>
 </body>
+
+<script src="./scripts.js"></script>
 
 </html>
