@@ -18,7 +18,7 @@
         <img src="assets/logo-header.png" alt="Mario" class="logo-header">
         <nav>
             <a>Home</a>
-            <a>Fale conosco</a>
+            <a href="#form-contato" onclick="clickButton()">Fale conosco</a>
             <a>Nossos projetos</a>
         </nav>
     </header>
@@ -53,7 +53,7 @@
 
     <div class="mascara-form" onclick="clickInMask()">
     </div>
-    <form action="https://formcarry.com/s/UtwfQK2pApW" method="POST" enctype="multipart/form-data">
+    <form id="form-contato" action="https://formcarry.com/s/UtwfQK2pApW" method="POST" enctype="multipart/form-data">
         <input type="text" placeholder="Nome" name="nome" required>
         <input type="email" placeholder="E-mail" name="email" required>
         <input type="tel" placeholder="Telefone" name="telefone" required>

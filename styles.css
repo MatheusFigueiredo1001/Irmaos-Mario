@@ -25,7 +25,9 @@ header {
 a {
 	cursor: pointer;
 	margin-left: 30px;
+	color: #fff;
 	font-size: 24px;
+	text-decoration: none;
 
 	&:hover {
 		color: #c51111;
